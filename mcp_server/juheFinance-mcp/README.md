@@ -12,7 +12,7 @@ This is a Model Context Protocol (MCP) server that provides stock market data fr
 ## Prerequisites
 
 - Node.js 16 or higher
-- A Juhe Finance API key (get one from [Juhe Data](http://www.juhe.cn/))
+- A Juhe Finance API key (get one from [Juhe Data](https://www.juhe.cn/docs/api/id/21))
 
 ## Installation
 
@@ -29,21 +29,25 @@ This is a Model Context Protocol (MCP) server that provides stock market data fr
 ## Building and Running
 
 Build the TypeScript code:
+
 ```
 npm run build
 ```
 
 Run the server:
+
 ```
 npm start
 ```
 
 For development with auto-reloading:
+
 ```
 npm run dev
 ```
 
 Test the API client:
+
 ```
 npm test
 ```
@@ -81,6 +85,7 @@ Replace `/absolute/path/to/dist/index.js` with the absolute path to the built in
 Gets real-time stock data for a specific Shanghai/Shenzhen stock or index.
 
 Parameters:
+
 - `gid` (optional): Stock code (e.g., sh601009 for Shanghai, sz000001 for Shenzhen)
 - `type` (optional): Index type (0 for SSE Composite, 1 for SZSE Component). If provided, `gid` is ignored.
 
@@ -89,6 +94,7 @@ Parameters:
 Gets U.S. stock market data with pagination.
 
 Parameters:
+
 - `page` (optional): Page number (default: 1)
 - `type` (optional): Items per page (1: 20 items, 2: 40 items, 3: 60 items; default: 1)
 
@@ -101,9 +107,11 @@ Access Shanghai/Shenzhen stock or index data directly as a resource.
 URI Template: `hs-stock://{gidOrType}`
 
 Parameters:
+
 - `gidOrType`: Stock code (e.g., sh601009) or index type (0 or 1)
 
 Example usage in Claude:
+
 - "Analyze this stock: hs-stock://sh601009"
 - "What’s the SSE Composite Index: hs-stock://0"
 
@@ -114,8 +122,10 @@ Access U.S. stock data as a resource.
 URI Template: `us-stock://{page}/{type}`
 
 Parameters:
+
 - `page`: Page number (default: 1)
 - `type`: Items per page (1, 2, 3; default: 1)
 
 Example usage in Claude:
+
 - "Show me U.S. stocks: us-stock://1/1"
