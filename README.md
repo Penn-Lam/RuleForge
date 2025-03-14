@@ -43,14 +43,14 @@ RuleForge aims to be the go-to place for developers to find, contribute, and ref
    ```bash
    git clone https://github.com/Penn-Lam/RuleForge
    ```
-2. Browse the `rules/` and `mcp/` directories for configurations that suit your needs.
+2. Browse the `rules/` and `mcp_server/` directories for configurations that suit your needs.
 3. Copy them into your Cursor/Windsurf workspace and tweak as necessary.
 4. Follow the setup instructions in each folder to integrate with your IDE.
 
 ## Contributing
 Have a killer rule or MCP server config? We’d love your contribution! 
 - Fork this repo.
-- Add your files to the appropriate directory (`rules/` or `mcp/`).
+- Add your files to the appropriate directory (`rules/` or `mcp_server/`).
 - Submit a pull request with a brief description of what your config does.
 
 ## Community
