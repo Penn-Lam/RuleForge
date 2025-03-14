@@ -1,6 +1,6 @@
 # Juhe Finance Stock MCP Server
 
-This is a Model Context Protocol (MCP) server that provides stock market data from the Juhe Finance API. It allows Claude and other MCP clients to access real-time and historical stock data for Chinese (Shanghai/Shenzhen) and U.S. markets.
+This is a Model Context Protocol (MCP) server that provides stock market data from the Juhe Finance API. It allows Cursor or Windsurf to access real-time and historical stock data for Chinese (Shanghai/Shenzhen) and U.S. markets.
 
 ## Features
 
@@ -34,31 +34,7 @@ Build the TypeScript code:
 npm run build
 ```
 
-Run the server:
-
-```
-npm start
-```
-
-For development with auto-reloading:
-
-```
-npm run dev
-```
-
-Test the API client:
-
-```
-npm test
-```
-
-## Using with Claude for Desktop
-
-To use this MCP server with Claude for Desktop:
-
-1. Open Claude for Desktop
-2. Go to Settings > Developer > Edit Config
-3. Add the following to your `claude_desktop_config.json`:
+## Using with Cursor/Windsurf
 
 ```json
 {
@@ -75,8 +51,6 @@ To use this MCP server with Claude for Desktop:
 ```
 
 Replace `/absolute/path/to/dist/index.js` with the absolute path to the built index.js file.
-
-4. Restart Claude for Desktop
 
 ## Available Tools
 
@@ -126,6 +100,6 @@ Parameters:
 - `page`: Page number (default: 1)
 - `type`: Items per page (1, 2, 3; default: 1)
 
-Example usage in Claude:
+Example usage in Windsurf:
 
-- "Show me U.S. stocks: us-stock://1/1"
+- "Based on all the data from the past six months, select stocks that have a 20% upside potential for recent purchases. The search should be conducted in the A-share market, excluding the STAR Market, and the recent moving averages should show an upward trend. The theme should not be niche."
