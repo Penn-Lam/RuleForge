@@ -1,6 +1,6 @@
 # RuleForge
 
-Welcome to **RuleForge** – a centralized repository for collecting and sharing workspace rules and MCP server configurations for [Cursor](https://cursor.com) and [Windsurf](https://windsurf.run). Unlock the full potential of these powerful AI-driven IDEs by combining custom rules, Model Context Protocol (MCP) servers, and their built-in capabilities for code generation, execution, and result analysis.
+Welcome to **RuleForge** – a centralized repository for collecting and sharing workspace rules and MCP server configurations for [Cursor](https://cursor.com) and [Windsurf](https://codeium.com/windsurf). Unlock the full potential of these powerful AI-driven IDEs by combining custom rules, Model Context Protocol (MCP) servers, and their built-in capabilities for code generation, execution, and result analysis.
 
 ## Why RuleForge?
 Cursor and Windsurf are more than just code editors—they're platforms for automating workflows and enhancing productivity. By defining workspace-specific rules and integrating MCP servers, you can:

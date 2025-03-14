@@ -8,7 +8,7 @@
 ## 使用步骤
 - 配置好MCP Server
     - [Alpha Vantage](https://github.com/ranveer0323/stock-analysis-mcp/tree/main)
-    - [JUHE](https://github.com/Penn-Lam/shujuFinance-mcp)
+    - [JUHE](../../mcp_server/juheFinance-mcp/README.md)
 - 将`.md`改成`.windsurfrules`或`.cursorfrules`
 
 ## 环境配置
